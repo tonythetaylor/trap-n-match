@@ -1,0 +1,29 @@
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+.square {
+    background: #df86a9;
+    /* opacity: 0.73; */
+    border: 3px solid #000;
+    float: left;
+    font-size: 124px;
+    font-weight: bold;
+    line-height: 150px;
+    height: 150px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
