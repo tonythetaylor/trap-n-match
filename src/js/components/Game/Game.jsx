@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import './Game.css';
-import CardView from '../CardView/CardView';
-import Cards from '../Cards/Cards';
+import CardView from '../CardView/CardView.jsx';
+import Cards from '../Cards/Cards.jsx';
 
   class Game extends Component {
 
@@ -106,7 +106,7 @@ import Cards from '../Cards/Cards';
                       </div>;
   
       if (this.state.pairsFound === this.memoryCards.NUM_IMAGES) {
-        gameStatus = <div className='Game-status'>
+        gameStatus = <div className='Game-over'>
                       <div>GAME COMPLETE!</div>
                       <div>You used {this.state.turnNo-1} turns</div>
                       <div><button onClick={this.onPlayAgain}>Play again?</button></div></div>;      
@@ -114,14 +114,14 @@ import Cards from '../Cards/Cards';
   
       return (
         <div className='Game'>
-          <div className='spacer'></div>
+          <div className='spacer' />
           <header className='Game-header'>
-            <div className='Game-title'>TRAP ~n~ MATCH</div>
+            {/* <div className='Game-title'>TRAP ~n~ MATCH</div> */}
           </header>
           <div>
             {gameStatus}
           </div>
-          <div className='spacer'></div>
+          <div className='spacer' />
           <div className='CardContainer'>
             {cardViews}
           </div>

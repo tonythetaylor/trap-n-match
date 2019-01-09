@@ -70,11 +70,23 @@
     font-size: 1.5em;
     background-color: #000;
     color: #fff;
-    position: realtive;
+    position: absolute;
     float: right;
     right: 100px;
     width: 100px;
     height: 100px;
+  }
+
+  .Game-over {
+    padding: 20px;  
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    float: right;
+    right: 100px;
+    width: 100px;
+    height: 150px;
   }
   
   .Game-intro {

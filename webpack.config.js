@@ -1,4 +1,10 @@
 module.exports = {
+  entry: './src/index.js',
+  output: {
+    path: __dirname + '/dist',
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
     module: {
       rules: [
         {
@@ -12,8 +18,15 @@ module.exports = {
           test: /\.(png|jpg|gif)$/,
           loader: 'file-loader',
           options: {
-            name: '/albums/[name].[ext]',
+            name: '/dreamville/[name].[ext]',
           },
+        },
+        {
+          test: /\.css$/,
+          use: [
+            { loader: "style-loader" },
+            { loader: "css-loader" }
+          ]
         },
       ]
     }
