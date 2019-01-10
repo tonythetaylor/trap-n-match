@@ -1,7 +1,10 @@
 import React, {Component} from "react";
+import { Button, Container, Row, Col} from 'reactstrap';
+
 import './Game.css';
 import CardView from '../CardView/CardView.jsx';
 import Cards from '../Cards/Cards.jsx';
+import NavBar from '../Navigation/Navbar.jsx';
 
   class Game extends Component {
 
@@ -109,23 +112,37 @@ import Cards from '../Cards/Cards.jsx';
         gameStatus = <div className='Game-over'>
                       <div>GAME COMPLETE!</div>
                       <div>You used {this.state.turnNo-1} turns</div>
-                      <div><button onClick={this.onPlayAgain}>Play again?</button></div></div>;      
+                      <div><Button onClick={this.onPlayAgain}>Play again?</Button></div></div>;      
       }
   
-      return (
+      return (       
+        <Container fluid>
+          <NavBar />
         <div className='Game'>
-          <div className='spacer' />
-          <header className='Game-header'>
-            {/* <div className='Game-title'>TRAP ~n~ MATCH</div> */}
-          </header>
-          <div>
-            {gameStatus}
+          <Row>
+          <Col xs="6" sm="3">
+            
+            <header className='Game-header'>
+              {/* <div className='Game-title'>TRAP ~n~ MATCH</div> */}
+            </header>
+            <div className='spacer' />
+          </Col>
+
+            <Col sm="6" md={{ size: 5, offset: 1}}>
+            <div className='CardContainer'>
+              {cardViews}
+            </div>
+            </Col>
+
+            <Col xs={{ size: 10, offset: 1}} sm="3" md={{ size: 5, offset: 4}}>
+            <div>
+              {gameStatus}
+            </div>
+            </Col>
+
+          </Row>          
           </div>
-          <div className='spacer' />
-          <div className='CardContainer'>
-            {cardViews}
-          </div>
-        </div>
+        </Container>
       );
     }
   }

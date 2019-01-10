@@ -66,15 +66,15 @@
   }
   
   .Game-status {
-    padding: 20px;  
+    /* padding: 20px;   */
     font-size: 1.5em;
     background-color: #000;
     color: #fff;
-    position: absolute;
+    /* position: absolute;
     float: right;
     right: 100px;
     width: 100px;
-    height: 100px;
+    height: 100px; */
   }
 
   .Game-over {
@@ -101,7 +101,34 @@
     margin-bottom: 10px;      
     margin-left: 10px;  
     width: 100px;
-    height: 100px;    
+    height: 100px;   
+  }
+
+  @media screen and (max-width: 736px) {
+    .Card {
+      display: inline-block;
+      border-color: #000;
+      border-width: 5px;
+      border-style: solid;
+      margin-bottom: 10px;      
+      margin-left: 10px;  
+      width: 51px;
+      height: 51px;   
+    }
+  }
+
+  /* iPhone X */
+  @media screen and (max-width: 812px) {
+    .Card {
+      display: inline-block;
+      border-color: #000;
+      border-width: 5px;
+      border-style: solid;
+      margin-bottom: 10px;      
+      margin-left: 10px;  
+      width: 51px;
+      height: 51px;   
+    }
   }
   
   .Matched {
