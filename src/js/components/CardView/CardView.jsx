@@ -30,9 +30,9 @@ class CardView extends Component {
     let imPath = [ './dreamville/', './albums/'];
     shuffle(imPath);
     if (this.props.imageUp) {
-      imPath = imPath + this.props.image + '.jpg';
+      imPath = imPath[0] + this.props.image + '.jpg';
     } else {
-      imPath = imPath + 'back.jpg';
+      imPath = imPath[0] + 'back.jpg';
     }
 
     let className='Card';
