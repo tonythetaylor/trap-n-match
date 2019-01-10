@@ -134,7 +134,7 @@ import NavBar from '../Navigation/Navbar.jsx';
             </div>
             </Col>
 
-            <Col xs={{ size: 10, offset: 1}} sm="3" md={{ size: 5, offset: 4}}>
+            <Col xs={{ size: 12, offset: 0}} sm="3" md={{ size: 5, offset: 4}}>
             <div>
               {gameStatus}
             </div>
