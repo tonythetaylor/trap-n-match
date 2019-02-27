@@ -29,7 +29,7 @@ export default class NavBar extends React.Component {
     render() {
       return (
         <div>
-          <Navbar color="faded" light expand="md">
+          <Navbar color="faded" light expand="lg" className="">
               {/* Brandname */}
                  <NavbarBrand href="/">
                   Demo
@@ -37,33 +37,27 @@ export default class NavBar extends React.Component {
                  {/* Add toggler to auto-collapse */}
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-  
-                {/*Pull left */}
               <Nav className="ml-auto" navbar>
-                  <NavItem>
-                      <NavLink href="/link/">
-                          Left Nav Link
-                      </NavLink>
-                  </NavItem>
-              </Nav>
-  
-              {/* Pull right */}
-              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink href="/components/">Games</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="https://github.com/tonythetaylor/trap-n-match">GitHub</NavLink>
+                </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
-                    Games
+                    Options
                   </DropdownToggle>
-  
-                  <DropdownMenu >
+                  <DropdownMenu right>
                     <DropdownItem>
-                      Account
+                      Profile
                     </DropdownItem>
                     <DropdownItem>
                       Settings
                     </DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem>
-                      Logout
+                      Sign out
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>

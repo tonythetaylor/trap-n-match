@@ -78,15 +78,15 @@
   }
 
   .Game-over {
-    padding: 20px;  
+    /* padding: 20px;   */
     font-size: 1.5em;
     background-color: #000;
     color: #fff;
-    position: absolute;
+    /* position: absolute;
     float: right;
     right: 100px;
     width: 100px;
-    height: 150px;
+    height: 150px; */
   }
   
   .Game-intro {

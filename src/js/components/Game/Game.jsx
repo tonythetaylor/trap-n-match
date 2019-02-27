@@ -91,7 +91,7 @@ import NavBar from '../Navigation/Navbar.jsx';
         } else {
           this.timeout = setTimeout(() => { 
             this.clearCards(this.state.firstId, this.state.secondId);
-          },500); 
+          },800); 
         }
   
       }
@@ -106,6 +106,7 @@ import NavBar from '../Navigation/Navbar.jsx';
       let gameStatus = <div className='Game-status'>
                         <div>Turn: {this.state.turnNo}</div>
                         <div>Pairs found: {this.state.pairsFound}</div>
+                        <div>Flags: {this.state.firstId} {this.state.secondId}</div>
                       </div>;
   
       if (this.state.pairsFound === this.memoryCards.NUM_IMAGES) {
