@@ -78,11 +78,19 @@
   }
 
   .Game-over {
+<<<<<<< HEAD
     /* padding: 20px;   */
     font-size: 1.5em;
     background-color: #000;
     color: #fff;
     /* position: absolute;
+=======
+/*     padding: 20px;   */
+    font-size: 1.5em;
+    background-color: #000;
+    color: #fff;
+/*     position: absolute;
+>>>>>>> 48f60d6acecb78b379830ed8b014fd44c559446e
     float: right;
     right: 100px;
     width: 100px;
