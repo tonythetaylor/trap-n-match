@@ -32,7 +32,7 @@ export default class NavBar extends React.Component {
           <Navbar color="faded" light expand="lg" className="">
               {/* Brandname */}
                  <NavbarBrand href="/">
-                  Demo
+                  Trap-n-Match
               </NavbarBrand>
                  {/* Add toggler to auto-collapse */}
             <NavbarToggler onClick={this.toggle} />
