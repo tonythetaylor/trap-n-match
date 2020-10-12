@@ -50,14 +50,14 @@
     background-color: #f9d550;
     /* height: 20px;
     padding: 20px; */
-    color: #000;
+    color: #fff;
   }
   
   .Game-title {
     padding: 20px;  
     font-size: 12px;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     position: relative;
     float: left;
     /* left: 100px; */
@@ -68,8 +68,8 @@
   .Game-status {
     /* padding: 20px;   */
     font-size: 1.5em;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     /* position: absolute;
     float: right;
     right: 100px;
@@ -78,19 +78,10 @@
   }
 
   .Game-over {
-<<<<<<< HEAD
     /* padding: 20px;   */
     font-size: 1.5em;
-    background-color: #000;
+    background-color: #fff;
     color: #fff;
-    /* position: absolute;
-=======
-/*     padding: 20px;   */
-    font-size: 1.5em;
-    background-color: #000;
-    color: #fff;
-/*     position: absolute;
->>>>>>> 48f60d6acecb78b379830ed8b014fd44c559446e
     float: right;
     right: 100px;
     width: 100px;
@@ -103,7 +94,7 @@
   
   .Card {
     display: inline-block;
-    border-color: #000;
+    border-color: #fff;
     border-width: 5px;
     border-style: solid;
     margin-bottom: 10px;      
